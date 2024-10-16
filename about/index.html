@@ -12,24 +12,26 @@
     <link rel="icon" type="image/svg" href="favicon.svg" />
     <script>
       function applyTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.setAttribute("data-theme", theme);
       }
 
       function detectSystemTheme() {
-        const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+        const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
         if (darkThemeMq.matches) {
-          applyTheme('dark');
+          applyTheme("dark");
         } else {
-          applyTheme('light');
+          applyTheme("light");
         }
       }
 
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        const newColorScheme = e.matches ? 'dark' : 'light';
-        applyTheme(newColorScheme);
-      });
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (e) => {
+          const newColorScheme = e.matches ? "dark" : "light";
+          applyTheme(newColorScheme);
+        });
 
-      window.addEventListener('DOMContentLoaded', detectSystemTheme);
+      window.addEventListener("DOMContentLoaded", detectSystemTheme);
     </script>
   </head>
 
@@ -37,6 +39,7 @@
     <div class="wrapper">
       <header>
         <span class="company-name">sneroff.</span>
+        <div class="return-back">&larr;</div>
       </header>
 
       <div class="content">
@@ -60,7 +63,8 @@
             <p>
               Hello! I am a Python developer with experience in web development.
               I am interested in creating web applications using Python and
-              JavaScript. I am also interested in machine learning and data analysis.
+              JavaScript. I am also interested in machine learning and data
+              analysis.
             </p>
           </div>
           <div class="skills">
@@ -84,9 +88,21 @@
               <li>Future code</li>
               <li>WorldSkills (Regional level)</li>
               <li>Young professionals (Regional level)</li>
-              <li>WorldSkills <span style="font-weight: bold;">(All-Russian level)</span></li>
-              <li>Fin-Athlon <span style="font-weight: bold;">(Siberian Federal District)</span></li>
-              <li>Regional Championship in computer vision and artificial Intelligence for the Governor's Cup of the Novosibirsk Region <span style="font-weight: bold;">(x4)</span></li>
+              <li>
+                WorldSkills
+                <span style="font-weight: bold">(All-Russian level)</span>
+              </li>
+              <li>
+                Fin-Athlon
+                <span style="font-weight: bold"
+                  >(Siberian Federal District)</span
+                >
+              </li>
+              <li>
+                Regional Championship in computer vision and artificial
+                Intelligence for the Governor's Cup of the Novosibirsk Region
+                <span style="font-weight: bold">(x4)</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -96,5 +112,11 @@
         <div class="contact"><a href="https://t.me/sneroff">S.Nekrasov</a></div>
       </footer>
     </div>
+    <script>
+      const returnBack = document.querySelector(".return-back");
+      returnBack.addEventListener("click", () => {
+        window.location.href = "../index.html";
+      });
+    </script>
   </body>
 </html>

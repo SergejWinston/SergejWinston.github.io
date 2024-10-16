@@ -10,12 +10,36 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/svg" href="favicon.svg" />
+    <script>
+      function applyTheme(theme) {
+        document.documentElement.setAttribute("data-theme", theme);
+      }
+
+      function detectSystemTheme() {
+        const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+        if (darkThemeMq.matches) {
+          applyTheme("dark");
+        } else {
+          applyTheme("light");
+        }
+      }
+
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (e) => {
+          const newColorScheme = e.matches ? "dark" : "light";
+          applyTheme(newColorScheme);
+        });
+
+      window.addEventListener("DOMContentLoaded", detectSystemTheme);
+    </script>
   </head>
 
   <body>
     <div class="wrapper">
       <header>
         <span class="company-name">sneroff.</span>
+        <div class="return-back">&larr;</div>
       </header>
 
       <div class="content">
@@ -43,5 +67,11 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+      const returnBack = document.querySelector(".return-back");
+      returnBack.addEventListener("click", () => {
+        window.location.href = "../index.html";
+      });
+    </script>
   </body>
 </html>
