@@ -175,6 +175,7 @@ header {
 .my-name {
     font-size: 20px;
     font-weight: bold;
+
     @media (min-width: 1000px) {
         margin-top: 10px;
     }
@@ -183,16 +184,18 @@ header {
 .my-bio {
     display: flex;
     text-align: center;
+
     @media (max-width: 1000px) {
         flex-direction: row;
     }
 }
 
-.text-block{
+.text-block {
     display: flex;
     flex-direction: column;
     text-align: center;
-
+    justify-content: center;
+    align-items: center;
     @media (max-width: 1000px) {
         margin-left: 10px;
     }
@@ -206,9 +209,11 @@ header {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -220,4 +225,41 @@ header {
     color: transparent;
     animation: rainbow-animation 5s infinite;
     background-size: 400% 100%;
+    font-size: larger;
+}
+
+@keyframes python-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.python-text {
+    font-size: larger;
+    background-image: linear-gradient(to right, rgb(19, 0, 128), #6473f7, rgb(196, 209, 20));
+    background-clip: text;
+    color: transparent;
+    animation: python-animation 5s infinite;
+    background-size: 400% 100%;
+    -webkit-animation: python-animation 5s infinite;
+}
+
+.about-me{
+    margin-top: -20px;
+}
+
+.skills {
+    margin-top: -20px;
+}
+
+.achievements {
+    margin-top: -20px;
 }
