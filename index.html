@@ -19,29 +19,28 @@
       </header>
 
       <div class="content">
-        <div class="left-pos block">
-          <a class="select-subject" href="society/">1 > Обществознание</a>
-          <a class="select-subject" href="economic/">2 > Экономика</a>
-          <a class="select-subject" href="sociology/">3 > Социология</a>
-          <a class="select-subject" href="policy/">4 > Политика</a>
-          <a class="select-subject" href="law/">5 > Право</a>
-          <div class="splash"></div>
-          <a class="select-subject" href="">1 > Всеообщая история</a>
-          <a class="select-subject" href="">2 > История Сибири</a>
-        </div>
-        <div class="right-pos block">
-          Выберите предмет, по которому хотите получить материал
+        <div class="block">
+          <div class="about_me button">About me</div>
+          <div class="education button">Education</div>
         </div>
       </div>
 
       <footer class="site-footer">
-        <span class="about">Электронные материалы к ЕГЭ</span>
-        <div class="contact">
-          <a href="https://t.me/sneroff">S.Nekrasov</a> // <a>V.Burmatova</a>
-        </div>
+        <div class="contact"><a href="https://t.me/sneroff">S.Nekrasov</a></div>
       </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+      const aboutMe = document.querySelector('.about_me');
+      const education = document.querySelector('.education');
+
+      aboutMe.addEventListener('click', () => {
+        window.location.href = 'about/';
+      });
+
+      education.addEventListener('click', () => {
+        window.location.href = 'education/';
+      });
+    </script>
   </body>
 </html>
