@@ -127,13 +127,6 @@ header {
     text-align: center;
 }
 
-.site-footer>.contact {
-    @media (max-width: 1000px) {
-        display: none;
-    }
-}
-
-
 .content {
     padding: 65px 10px 10px 10px;
     flex: 1;
