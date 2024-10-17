@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../../styles.css" />
     <link rel="icon" type="image/svg" href="favicon.svg" />
     <script>
       function applyTheme(theme) {
@@ -39,19 +39,12 @@
     <div class="wrapper">
       <header>
         <span class="company-name">sneroff.</span>
+        <div class="return-back">←</div>
       </header>
 
       <div class="content">
         <div class="block">
-          <h3>Information</h3>
-          <div class="line"></div>
-          <div class="about_me button">About me</div>
-          <div class="line"></div>
-          <h3>My projects</h3>
-          <div class="line"></div>
-          <div class="education button">Materials for EGE</div>
-          <div class="generation_report button">Generation Report (HTML)</div>
-          <div class="xegeroff button">Xegeroff</div>
+          <div class="block-title">In development process...&nbsp;🚬</div>
         </div>
       </div>
 
@@ -60,28 +53,20 @@
       </footer>
     </div>
 
+    <style>
+      .content {
+        @media (max-width: 1000px) {
+          flex-direction: row;
+        }
+      }
+    </style>
     <script>
-      const aboutMe = document.querySelector(".about_me");
-      const education = document.querySelector(".education");
-      const generationReport = document.querySelector(".generation_report");
-      const xegeroff = document.querySelector(".xegeroff");
       
-      aboutMe.addEventListener("click", () => {
-        window.location.href = "about/";
+      const returnBack = document.querySelector(".return-back");
+      returnBack.addEventListener("click", () => {
+        window.location.href = "../index.html";
       });
-
-      education.addEventListener("click", () => {
-        window.location.href = "education/";
-      });
-
-      generationReport.addEventListener("click", () => {
-        window.location.href = "https://github.com/SergejWinston/generationHTMLReport";
-      });
-
-      xegeroff.addEventListener("click", () => {
-        window.location.href = "templates/in_development/";
-      });
-
     </script>
+
   </body>
 </html>

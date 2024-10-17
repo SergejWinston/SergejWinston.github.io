@@ -187,14 +187,14 @@ header {
     flex-direction: column;
 }
 
-.list-themes > a {
+.list-themes>a {
     text-decoration: none;
     color: var(--theme-subject);
     font-size: 18px;
     margin-bottom: 2vh;
 }
 
-.list-themes > a:last-child {
+.list-themes>a:last-child {
     margin-bottom: 0;
 }
 
@@ -212,7 +212,7 @@ header {
     text-align: justify;
 }
 
-.text-lesson > * {
+.text-lesson>* {
     margin-top: 8px;
     word-break: break-word;
     hyphens: auto;
@@ -221,7 +221,7 @@ header {
     -ms-hyphens: auto;
 }
 
-.text-lesson > bold {
+.text-lesson>bold {
     font-weight: bold;
 }
 
@@ -255,4 +255,21 @@ header {
 h3 {
     margin-top: 0;
     text-align: center;
+}
+
+.block-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    /* font-weight: bold; */
+    width: 100%;
+    height: 100%;
+    border: 2px solid #b99a00;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
