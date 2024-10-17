@@ -6,6 +6,7 @@
     --block-background-color: #fff;
     --button-background-color: #d9d9d9;
     --button-hover-background-color: #c9c9c9;
+    --theme-subject: #382b58;
 }
 
 [data-theme="dark"] {
@@ -16,6 +17,7 @@
     --block-background-color: #1e1e1e;
     --button-background-color: #333;
     --button-hover-background-color: #444;
+    --theme-subject: #d3d3d3;
 }
 
 html,
@@ -49,7 +51,6 @@ header {
     vertical-align: center;
     margin-bottom: 10px;
     z-index: 1000;
-    /* Ensure it stays on top */
 }
 
 .return-back {
@@ -79,9 +80,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     font-style: italic;
-    /* @media (max-width: 1000px) {
-        display: none;
-    } */
+
 }
 
 .menu-buttons {
@@ -105,7 +104,6 @@ header {
     display: flex;
     flex-direction: row;
     background-color: var(--footer-background-color);
-    text-align: center;
     padding: 20px 0;
     border-top: 1px solid var(--button-background-color);
     font-size: 14px;
@@ -191,7 +189,7 @@ header {
 
 .list-themes > a {
     text-decoration: none;
-    color: #483657;
+    color: var(--theme-subject);
     font-size: 18px;
     margin-bottom: 2vh;
 }
