@@ -246,3 +246,13 @@ header {
     background-color: var(--button-hover-background-color);
     cursor: pointer;
 }
+
+.line {
+    border-bottom: 4px dashed #2e2e2e;
+    margin-bottom: 2vh;
+}
+
+h3 {
+    margin-top: 0;
+    text-align: center;
+}
