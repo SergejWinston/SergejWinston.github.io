@@ -248,7 +248,7 @@ header {
 }
 
 .line {
-    border-bottom: 4px dashed #2e2e2e;
+    border-bottom: 4px dashed var(--button-background-color);
     margin-bottom: 2vh;
 }
 
@@ -257,7 +257,7 @@ h3 {
     text-align: center;
 }
 
-.block-title {
+.block-title-warning {
     display: flex;
     justify-content: center;
     align-items: center;
