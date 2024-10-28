@@ -45,13 +45,14 @@
         <div class="block">
           <h3>Information</h3>
           <div class="line"></div>
-          <div class="about_me button">About me</div>
+          <div onclick="window.location.href='about/'" class="about_me button">About me</div>
           <div class="line"></div>
           <h3>My projects</h3>
           <div class="line"></div>
-          <div class="education button">Materials for EGE</div>
-          <div class="generation_report button">Generation Report (HTML)</div>
-          <div class="xegeroff button">Xegeroff</div>
+          <div onclick="window.location.href='education/'" class="education button">Materials for EGE</div>
+          <div onclick="window.location.href='https://github.com/SergejWinston/generationHTMLReport'" class="generation_report button">Generation Report (HTML)</div>
+          <div onclick="window.location.href='https://lms.sneroff.me'" class="lms button">LMS // Kuybyshevsky DDT</div>
+          <div onclick="window.location.href='templates/in_development/'" class="xegeroff button">Xegeroff</div>
         </div>
       </div>
 
@@ -59,29 +60,5 @@
         <div class="contact"><a href="https://t.me/sneroff">S.Nekrasov</a></div>
       </footer>
     </div>
-
-    <script>
-      const aboutMe = document.querySelector(".about_me");
-      const education = document.querySelector(".education");
-      const generationReport = document.querySelector(".generation_report");
-      const xegeroff = document.querySelector(".xegeroff");
-      
-      aboutMe.addEventListener("click", () => {
-        window.location.href = "about/";
-      });
-
-      education.addEventListener("click", () => {
-        window.location.href = "education/";
-      });
-
-      generationReport.addEventListener("click", () => {
-        window.location.href = "https://github.com/SergejWinston/generationHTMLReport";
-      });
-
-      xegeroff.addEventListener("click", () => {
-        window.location.href = "templates/in_development/";
-      });
-
-    </script>
   </body>
 </html>
