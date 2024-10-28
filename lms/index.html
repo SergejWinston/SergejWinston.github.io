@@ -28,6 +28,18 @@
             border: none;
         }
     </style>
+    <script>
+        function isChrome() {
+            return /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        }
+        
+        if (isChrome()) {
+            window.location.href = 'https://honestly-just-hedgehog.ngrok-free.app/';
+        } else {
+            console.log("Браузер: Не Google Chrome");
+        }
+
+    </script>
 </head>
 
 <iframe src="https://honestly-just-hedgehog.ngrok-free.app/" name="mainwindow"></iframe>
