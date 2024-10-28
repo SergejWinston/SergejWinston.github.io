@@ -1,226 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sneroff. >>> education >>> society</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../../styles.css" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="icon" type="image/svg" href="../favicon.svg" />
-    <script>
-      function applyTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sneroff. >>> education >>> society</title>
+  <meta name="title" content="sneroff. >>> education >>> society" />
+  <meta name="description" content="I'm too busy right now, I need a cup of tea. ☕" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sneroff.me/" />
+  <meta property="og:title" content="sneroff. >>> education >>> society" />
+  <meta property="og:description" content="I'm too busy right now, I need a cup of tea. ☕" />
+  <meta property="og:image" content="https://sneroff.me/image.png" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://sneroff.me/" />
+  <meta property="twitter:title" content="sneroff. >>> education >>> society" />
+  <meta property="twitter:description" content="I'm too busy right now, I need a cup of tea. ☕" />
+  <meta property="twitter:image" content="https://sneroff.me/image.png" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/svg" href="../favicon.svg" />
+  <script>
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
+
+    function detectSystemTheme() {
+      const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+      if (darkThemeMq.matches) {
+        applyTheme('dark');
+      } else {
+        applyTheme('light');
       }
+    }
 
-      function detectSystemTheme() {
-        const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
-        if (darkThemeMq.matches) {
-          applyTheme('dark');
-        } else {
-          applyTheme('light');
-        }
-      }
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+      const newColorScheme = e.matches ? 'dark' : 'light';
+      applyTheme(newColorScheme);
+    });
 
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        const newColorScheme = e.matches ? 'dark' : 'light';
-        applyTheme(newColorScheme);
-      });
+    window.addEventListener('DOMContentLoaded', detectSystemTheme);
+  </script>
+</head>
 
-      window.addEventListener('DOMContentLoaded', detectSystemTheme);
-    </script>
-  </head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="return-back">&larr;</div>
+      <span class="company-name">sneroff.</span>
+    </header>
 
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="return-back">&larr;</div>
-        <span class="company-name">sneroff.</span>
-      </header>
+    <div class="content">
+      <div class="right-pos block">
+        <div class="subject-title">
+          Человек как результат биологической и социокультурной эволюции.
+          Влияние социокультурных факторов на формирование личности. Личность
+          в современном обществе. Коммуникативные качества личности.
+          Потребности и интересы
+        </div>
+        <div class="text-lesson">
+          <bold>Антропогенез</bold> - биологическая эволюция, в результате
+          которой появился человек разумный (homo sapiens), то есть процесс
+          появления и развития человека.
+          <br />
+          <bold>Человек - это биосоциальное существо,</bold>
+          которому характерны как свойства, передающиеся по наследству,
+          обусловленные природой, так и появившиеся в результате социализации
+          жизни в обществе.
+          <br />
+          <bold>Человек является частью природы и в тоже время неразрывно связан
+            с обществом.</bold>
+          <br />
+          <bold>Биологическая природа человека</bold>
+          проявляется в том, что он принадлежит к высшим млекопитающим,
+          образую новый вид Homo sapiens (Человек разумный), и ему
+          свойственные природные качества.
+          <br />
+          <bold>Биологическое в человеке:</bold>
+          <br />
+          <ul>
+            <li>его анатомия</li>
+            <li>биологические потребности</li>
+            <li>инстинкты</li>
+            <li>наследственность (генах)</li>
+            <li>прямохождение</li>
+            <li>развитый головной мозг и др.</li>
+          </ul>
+          <bold>Социальная сущность</bold> человека проявляется в его связи с
+          обществом. Человек становится человкеом, личностью, лишь вступив в
+          социальные отношения, в общении с другими людьми.
+          <bold>Социальная сущность проявляется</bold> через способность и
+          готовность к обществнно полезному труду, сознание и разум, свободу и
+          ответственность.
+          <br />
+          <bold>Социальное в человек: </bold>
+          <br />
+          <ul>
+            <li>мышление</li>
+            <li>речь</li>
+            <li>целеполагание (то есть постановка цели)</li>
+            <li>социальные потребности (в дружбе, любви, понимании и др.)</li>
+            <li>духовные потребности (учение, культура, религия и др.)</li>
+            <li>способность к труду, деятельности</li>
+            <li>способность к творческой деятельности</li>
+            <li>развитие способностей</li>
+            <li>совершенствование</li>
+            <li>умение фантазировать и др.</li>
+          </ul>
+          <bold>Основные отличия человека от животного: </bold>
+          <br />
+          <ul>
+            <li>
+              Способность обладать мышлением, способностью анализироват,
+              размышлять, думать
+            </li>
+            <li>
+              Способность к членораздельной речи. Даже если человек не может
+              говорить, он использует особый язые глухонемых, но это тоже
+              вербальное общение (то есть при помощи слов)
+            </li>
+            <li>
+              Способность к постанове цели (целеполаганию) и стремление
+              достичь ожидаемого результата. Человек может предвидеть
+              результаты своей деятельности, планировать её
+            </li>
+            <li>
+              Способность к осознанной деятельности, преобразованию природы,
+              общества и самого себя.
+            </li>
+            <li>
+              Способность создавать орудия труда, использовать их в своей
+              деятельности.
+            </li>
+            <li>
+              Только человек способен к творческой деятельности, к созданию
+              духовных ценностей, культуры. Это способность отражать
+              действительность не только с помощью слов, но и с помощью других
+              средств: музыки, красок, движения тела в танце и др.
+            </li>
+            <li>
+              Человек может моделировать своё поведение, в течении даже одного
+              дня играть несколько социальных ролей в зависимости от ситуации
+            </li>
+            <li>
+              Только человеку свойственно отношение к миру, действительности,
+              людям с позиций нравственности, добра и зла
+            </li>
+            <li>
+              Человек удовлетворяет разного рода потребности: биологические,
+              социальные, духовные, материальные
+            </li>
+          </ul>
 
-      <div class="content">
-        <div class="right-pos block">
-          <div class="subject-title">
-            Человек как результат биологической и социокультурной эволюции.
-            Влияние социокультурных факторов на формирование личности. Личность
-            в современном обществе. Коммуникативные качества личности.
-            Потребности и интересы
-          </div>
-          <div class="text-lesson">
-            <bold>Антропогенез</bold> - биологическая эволюция, в результате
-            которой появился человек разумный (homo sapiens), то есть процесс
-            появления и развития человека.
-            <br />
-            <bold>Человек - это биосоциальное существо,</bold>
-            которому характерны как свойства, передающиеся по наследству,
-            обусловленные природой, так и появившиеся в результате социализации
-            жизни в обществе.
-            <br />
-            <bold
-              >Человек является частью природы и в тоже время неразрывно связан
-              с обществом.</bold
-            >
-            <br />
-            <bold>Биологическая природа человека</bold>
-            проявляется в том, что он принадлежит к высшим млекопитающим,
-            образую новый вид Homo sapiens (Человек разумный), и ему
-            свойственные природные качества.
-            <br />
-            <bold>Биологическое в человеке:</bold>
-            <br />
-            <ul>
-              <li>его анатомия</li>
-              <li>биологические потребности</li>
-              <li>инстинкты</li>
-              <li>наследственность (генах)</li>
-              <li>прямохождение</li>
-              <li>развитый головной мозг и др.</li>
-            </ul>
-            <bold>Социальная сущность</bold> человека проявляется в его связи с
-            обществом. Человек становится человкеом, личностью, лишь вступив в
-            социальные отношения, в общении с другими людьми.
-            <bold>Социальная сущность проявляется</bold> через способность и
-            готовность к обществнно полезному труду, сознание и разум, свободу и
-            ответственность.
-            <br />
-            <bold>Социальное в человек: </bold>
-            <br />
-            <ul>
-              <li>мышление</li>
-              <li>речь</li>
-              <li>целеполагание (то есть постановка цели)</li>
-              <li>социальные потребности (в дружбе, любви, понимании и др.)</li>
-              <li>духовные потребности (учение, культура, религия и др.)</li>
-              <li>способность к труду, деятельности</li>
-              <li>способность к творческой деятельности</li>
-              <li>развитие способностей</li>
-              <li>совершенствование</li>
-              <li>умение фантазировать и др.</li>
-            </ul>
-            <bold>Основные отличия человека от животного: </bold>
-            <br />
-            <ul>
-              <li>
-                Способность обладать мышлением, способностью анализироват,
-                размышлять, думать
-              </li>
-              <li>
-                Способность к членораздельной речи. Даже если человек не может
-                говорить, он использует особый язые глухонемых, но это тоже
-                вербальное общение (то есть при помощи слов)
-              </li>
-              <li>
-                Способность к постанове цели (целеполаганию) и стремление
-                достичь ожидаемого результата. Человек может предвидеть
-                результаты своей деятельности, планировать её
-              </li>
-              <li>
-                Способность к осознанной деятельности, преобразованию природы,
-                общества и самого себя.
-              </li>
-              <li>
-                Способность создавать орудия труда, использовать их в своей
-                деятельности.
-              </li>
-              <li>
-                Только человек способен к творческой деятельности, к созданию
-                духовных ценностей, культуры. Это способность отражать
-                действительность не только с помощью слов, но и с помощью других
-                средств: музыки, красок, движения тела в танце и др.
-              </li>
-              <li>
-                Человек может моделировать своё поведение, в течении даже одного
-                дня играть несколько социальных ролей в зависимости от ситуации
-              </li>
-              <li>
-                Только человеку свойственно отношение к миру, действительности,
-                людям с позиций нравственности, добра и зла
-              </li>
-              <li>
-                Человек удовлетворяет разного рода потребности: биологические,
-                социальные, духовные, материальные
-              </li>
-            </ul>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at
+          enim libero. Integer ac ex nec libero iaculis accumsan. Donec
+          maximus euismod tortor vel facilisis. Etiam pharetra eget lectus
+          vitae feugiat. Sed aliquam faucibus libero sed interdum. Aenean sed
+          ex egestas, faucibus tortor non, eleifend eros. Donec quis dignissim
+          erat, a maximus elit. Vestibulum ante ipsum primis in faucibus orci
+          luctus et ultrices posuere cubilia curae; Duis dignissim neque
+          maximus auctor mattis. Quisque vitae velit laoreet, egestas urna eu,
+          ullamcorper purus. Cras sem urna, commodo in hendrerit ut, pulvinar
+          quis orci. Integer et volutpat mi. Nunc iaculis faucibus magna in
+          vestibulum.
+          <br />
+          Vestibulum facilisis urna a vulputate pretium. Vestibulum tempor a
+          nisl in rhoncus. Quisque dolor erat, mollis quis magna ac, sagittis
+          commodo tellus. Maecenas in sem ante. Interdum et malesuada fames ac
+          ante ipsum primis in faucibus. Orci varius natoque penatibus et
+          magnis dis parturient montes, nascetur ridiculus mus. Nullam euismod
+          vestibulum efficitur. Phasellus metus diam, bibendum in est quis,
+          dignissim sodales justo. Cras lacinia ullamcorper tellus. Nunc
+          molestie, est vel sagittis gravida, nunc velit aliquam velit, non
+          viverra leo arcu id orci. Integer congue justo a enim tempus, quis
+          lacinia lacus consectetur.
+          <br />
+          Quisque venenatis eros ac nisi placerat fermentum. Aliquam a
+          consequat felis. Sed maximus malesuada ligula id consectetur. Cras
+          venenatis erat ac mauris accumsan iaculis. In congue semper
+          pulvinar. Pellentesque ultricies, tellus ut bibendum molestie,
+          tortor orci elementum dui, sed condimentum justo mauris non nisi.
+          Pellentesque ultrices odio eu metus tempor euismod. Suspendisse
+          vestibulum est nec augue aliquam, in condimentum tellus eleifend.
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia curae; Cras et nisi in orci sollicitudin tincidunt
+          sit amet vel mauris. Nunc in libero nulla.
+          <br />
+          Nunc vel ex volutpat, consectetur risus eu, tempus tortor.
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia curae; In dapibus, eros ac rutrum convallis, lectus
+          purus cursus mi, at venenatis elit erat ut tellus. Nulla laoreet
+          maximus risus ac pharetra. Duis suscipit blandit pulvinar. Fusce
+          lobortis ac orci vitae volutpat. Suspendisse elementum, massa non
+          aliquam tincidunt, massa lorem eleifend arcu, quis sodales lacus
+          metus a orci. Praesent id diam vestibulum, accumsan arcu vitae,
+          lacinia diam. Phasellus lacinia, magna eget iaculis venenatis, lorem
+          lorem faucibus quam, eu porta odio arcu at nisi. Cras at euismod
+          mauris. Proin imperdiet eu risus sed auctor.
+          <br />
 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at
-            enim libero. Integer ac ex nec libero iaculis accumsan. Donec
-            maximus euismod tortor vel facilisis. Etiam pharetra eget lectus
-            vitae feugiat. Sed aliquam faucibus libero sed interdum. Aenean sed
-            ex egestas, faucibus tortor non, eleifend eros. Donec quis dignissim
-            erat, a maximus elit. Vestibulum ante ipsum primis in faucibus orci
-            luctus et ultrices posuere cubilia curae; Duis dignissim neque
-            maximus auctor mattis. Quisque vitae velit laoreet, egestas urna eu,
-            ullamcorper purus. Cras sem urna, commodo in hendrerit ut, pulvinar
-            quis orci. Integer et volutpat mi. Nunc iaculis faucibus magna in
-            vestibulum.
-            <br />
-            Vestibulum facilisis urna a vulputate pretium. Vestibulum tempor a
-            nisl in rhoncus. Quisque dolor erat, mollis quis magna ac, sagittis
-            commodo tellus. Maecenas in sem ante. Interdum et malesuada fames ac
-            ante ipsum primis in faucibus. Orci varius natoque penatibus et
-            magnis dis parturient montes, nascetur ridiculus mus. Nullam euismod
-            vestibulum efficitur. Phasellus metus diam, bibendum in est quis,
-            dignissim sodales justo. Cras lacinia ullamcorper tellus. Nunc
-            molestie, est vel sagittis gravida, nunc velit aliquam velit, non
-            viverra leo arcu id orci. Integer congue justo a enim tempus, quis
-            lacinia lacus consectetur.
-            <br />
-            Quisque venenatis eros ac nisi placerat fermentum. Aliquam a
-            consequat felis. Sed maximus malesuada ligula id consectetur. Cras
-            venenatis erat ac mauris accumsan iaculis. In congue semper
-            pulvinar. Pellentesque ultricies, tellus ut bibendum molestie,
-            tortor orci elementum dui, sed condimentum justo mauris non nisi.
-            Pellentesque ultrices odio eu metus tempor euismod. Suspendisse
-            vestibulum est nec augue aliquam, in condimentum tellus eleifend.
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia curae; Cras et nisi in orci sollicitudin tincidunt
-            sit amet vel mauris. Nunc in libero nulla.
-            <br />
-            Nunc vel ex volutpat, consectetur risus eu, tempus tortor.
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia curae; In dapibus, eros ac rutrum convallis, lectus
-            purus cursus mi, at venenatis elit erat ut tellus. Nulla laoreet
-            maximus risus ac pharetra. Duis suscipit blandit pulvinar. Fusce
-            lobortis ac orci vitae volutpat. Suspendisse elementum, massa non
-            aliquam tincidunt, massa lorem eleifend arcu, quis sodales lacus
-            metus a orci. Praesent id diam vestibulum, accumsan arcu vitae,
-            lacinia diam. Phasellus lacinia, magna eget iaculis venenatis, lorem
-            lorem faucibus quam, eu porta odio arcu at nisi. Cras at euismod
-            mauris. Proin imperdiet eu risus sed auctor.
-            <br />
-
-            Integer imperdiet, leo quis sagittis malesuada, orci nisi ultrices
-            ipsum, a sollicitudin dui quam nec risus. Maecenas eget libero eget
-            neque tincidunt gravida id nec quam. Maecenas tincidunt tincidunt
-            suscipit. Cras nec tortor at felis hendrerit posuere vitae in odio.
-            Donec quis sapien ac tortor finibus scelerisque vel vitae nulla.
-            Pellentesque a turpis dolor. Vivamus ullamcorper ex mauris, nec
-            hendrerit dui placerat vehicula. Pellentesque tincidunt iaculis nibh
-            in eleifend. Proin porttitor scelerisque mauris sit amet lacinia.
-            Etiam sollicitudin maximus pretium. Vestibulum dapibus tellus nec
-            justo tincidunt tempus. Donec consequat justo vitae est molestie
-            ornare. Vivamus lobortis ut neque id aliquet. Vestibulum id leo
-            imperdiet, pellentesque erat in, posuere tortor.
-            <br />
-          </div>
+          Integer imperdiet, leo quis sagittis malesuada, orci nisi ultrices
+          ipsum, a sollicitudin dui quam nec risus. Maecenas eget libero eget
+          neque tincidunt gravida id nec quam. Maecenas tincidunt tincidunt
+          suscipit. Cras nec tortor at felis hendrerit posuere vitae in odio.
+          Donec quis sapien ac tortor finibus scelerisque vel vitae nulla.
+          Pellentesque a turpis dolor. Vivamus ullamcorper ex mauris, nec
+          hendrerit dui placerat vehicula. Pellentesque tincidunt iaculis nibh
+          in eleifend. Proin porttitor scelerisque mauris sit amet lacinia.
+          Etiam sollicitudin maximus pretium. Vestibulum dapibus tellus nec
+          justo tincidunt tempus. Donec consequat justo vitae est molestie
+          ornare. Vivamus lobortis ut neque id aliquet. Vestibulum id leo
+          imperdiet, pellentesque erat in, posuere tortor.
+          <br />
         </div>
       </div>
-
-      <footer class="site-footer">
-        <span class="about">Электронные материалы к ЕГЭ</span>
-        <div class="contact">
-          <a href="https://t.me/sneroff">S.Nekrasov</a> // <a>V.Burmatova</a>
-        </div>
-      </footer>
     </div>
-    <script>
-      const returnBack = document.querySelector(".return-back");
-      returnBack.addEventListener("click", () => {
-        window.location.href = "index.html";
-      });
-    </script>
-  </body>
+
+    <footer class="site-footer">
+      <span class="about">Электронные материалы к ЕГЭ</span>
+      <div class="contact">
+        <a href="https://t.me/sneroff">S.Nekrasov</a> // <a>V.Burmatova</a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const returnBack = document.querySelector(".return-back");
+    returnBack.addEventListener("click", () => {
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+
 </html>

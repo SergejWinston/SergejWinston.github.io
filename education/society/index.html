@@ -1,146 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sneroff. >>> education >>> society</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../../styles.css" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="icon" type="image/svg" href="../favicon.svg" />
-    <script>
-      function applyTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sneroff. >>> education >>> society</title>
+  <meta name="title" content="sneroff. >>> education >>> society" />
+  <meta name="description" content="I'm too busy right now, I need a cup of tea. ☕" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sneroff.me/" />
+  <meta property="og:title" content="sneroff. >>> education >>> society" />
+  <meta property="og:description" content="I'm too busy right now, I need a cup of tea. ☕" />
+  <meta property="og:image" content="https://sneroff.me/image.png" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://sneroff.me/" />
+  <meta property="twitter:title" content="sneroff. >>> education >>> society" />
+  <meta property="twitter:description" content="I'm too busy right now, I need a cup of tea. ☕" />
+  <meta property="twitter:image" content="https://sneroff.me/image.png" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/svg" href="../favicon.svg" />
+  <script>
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
+
+    function detectSystemTheme() {
+      const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+      if (darkThemeMq.matches) {
+        applyTheme('dark');
+      } else {
+        applyTheme('light');
       }
+    }
 
-      function detectSystemTheme() {
-        const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
-        if (darkThemeMq.matches) {
-          applyTheme('dark');
-        } else {
-          applyTheme('light');
-        }
-      }
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+      const newColorScheme = e.matches ? 'dark' : 'light';
+      applyTheme(newColorScheme);
+    });
 
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        const newColorScheme = e.matches ? 'dark' : 'light';
-        applyTheme(newColorScheme);
-      });
+    window.addEventListener('DOMContentLoaded', detectSystemTheme);
+  </script>
+</head>
 
-      window.addEventListener('DOMContentLoaded', detectSystemTheme);
-    </script>
-  </head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="return-back">&larr;</div>
+      <span class="company-name">sneroff.</span>
+    </header>
 
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="return-back">&larr;</div>
-        <span class="company-name">sneroff.</span>
-      </header>
-
-      <div class="content">
-        <div class="right-pos block">
-          <div class="subject-title">Обществознание</div>
-          <div class="list-themes">
-            <a href="1.1.html"
-              >1.1 > Человек как результат биологической и социокультурной эволюции.
-              Влияние социокультурных факторов на формирование личности.
-              Личность в современном обществе. Коммуникативные качества
-              личности. Потребности и интересы</a
-            >
-            <a href=""
-              >1.2 > Мировоззрение, его роль в жизнедеятельности человека.
-              Общественное и индивидуальное сознание. Самосознание и
-              социальное поведение</a
-            >
-            <a href=""
-              >1.3 > Деятельность и её структура. Мотивация деятельности.
-              Многообразие видов деятельности. Свобода и необходимость в
-              деятельности человека</a
-            >
-            <a href=""
-              >1.4 > Познавательная деятельность. Познание мира. Чувственное и
-              рациональное познание. Мышление, его формы и методы. Знание как
-              результат познавательной деятельности, его виды</a
-            >
-            <a href=""
-              >1.5 > Понятие истины, её критерии. Абсолютная, относительная истина</a
-            >
-            <a href=""
-              >1.6 > Общество как система. Общественные отношения. Связи между
-              подсистемами и элементами общества</a
-            >
-            <a href=""
-              >1.7 > Общественные потребности и социальные институты. Признаки и
-              функции социальных институтов</a
-            >
-            <a href=""
-              >1.8 > Типы обществ. Постиндустриальное (информационное) общество и его
-              особенности. Роль массовой коммуникации в современном
-              обществе</a
-            >
-            <a href=""
-              >1.9 > Многообразие путей и форм общественного развития. Эволюция,
-              социальная революция. Реформа. Общественный прогресс, его
-              критерии. Противоречивый характер прогресса. Глобализация и её
-              противоречивые последствия. Российское общество и человек перед
-              лицом угроз и вызовов XXI в.</a
-            >
-            <a href=""
-              >1.10 > Духовная деятельность человека. Духовные ценности российского
-              общества. Материальная и духовная культура. Формы культуры.
-              Народная, массовая и элитарная культура. Контркультура. Функции
-              культуры. Культурное многообразие современного общества. Диалог
-              культур. Вклад российской культуры в формирование ценностей
-              современного общества</a
-            >
-            <a href=""
-              >1.11 > Мораль как общечеловеческая ценность и социальный регулятор.
-              Категории морали. Нравственность. Этика и этические нормы.
-              Гражданственность. Патриотизм</a
-            >
-            <a href=""
-              >1.12 > Наука. Естественные, технические, точные и социально-гуманитарные
-              науки. Особенности, уровни и методы научного познания.
-              Особенности научного познания в социальногуманитарных науках.
-              Функции науки. Возрастание роли науки в современном обществе.
-              Направления научно-технологического развития и научные
-              достижения Российской Федерации</a
-            >
-            <a href=""
-              >1.13 > Образование в современном обществе. Российская система
-              образования. Основные направления развития образования в
-              Российской Федерации. Непрерывность образования в информационном
-              обществе. Значение самообразования</a
-            >
-            <a href=""
-              >1.14 > Религия, её роль в жизни общества и человека. Мировые и
-              национальные религии. Значение поддержания межконфессионального
-              мира в Российской Федерации. Свобода совести</a
-            >
-            <a href=""
-              >1.15 > Искусство, его основные функции. Особенности искусства как
-              формы духовной культуры. Достижения современного российского искусства</a
-            >
-          </div>
+    <div class="content">
+      <div class="right-pos block">
+        <div class="subject-title">Обществознание</div>
+        <div class="list-themes">
+          <a href="1.1.html">1.1 > Человек как результат биологической и социокультурной эволюции.
+            Влияние социокультурных факторов на формирование личности.
+            Личность в современном обществе. Коммуникативные качества
+            личности. Потребности и интересы</a>
+          <a href="">1.2 > Мировоззрение, его роль в жизнедеятельности человека.
+            Общественное и индивидуальное сознание. Самосознание и
+            социальное поведение</a>
+          <a href="">1.3 > Деятельность и её структура. Мотивация деятельности.
+            Многообразие видов деятельности. Свобода и необходимость в
+            деятельности человека</a>
+          <a href="">1.4 > Познавательная деятельность. Познание мира. Чувственное и
+            рациональное познание. Мышление, его формы и методы. Знание как
+            результат познавательной деятельности, его виды</a>
+          <a href="">1.5 > Понятие истины, её критерии. Абсолютная, относительная истина</a>
+          <a href="">1.6 > Общество как система. Общественные отношения. Связи между
+            подсистемами и элементами общества</a>
+          <a href="">1.7 > Общественные потребности и социальные институты. Признаки и
+            функции социальных институтов</a>
+          <a href="">1.8 > Типы обществ. Постиндустриальное (информационное) общество и его
+            особенности. Роль массовой коммуникации в современном
+            обществе</a>
+          <a href="">1.9 > Многообразие путей и форм общественного развития. Эволюция,
+            социальная революция. Реформа. Общественный прогресс, его
+            критерии. Противоречивый характер прогресса. Глобализация и её
+            противоречивые последствия. Российское общество и человек перед
+            лицом угроз и вызовов XXI в.</a>
+          <a href="">1.10 > Духовная деятельность человека. Духовные ценности российского
+            общества. Материальная и духовная культура. Формы культуры.
+            Народная, массовая и элитарная культура. Контркультура. Функции
+            культуры. Культурное многообразие современного общества. Диалог
+            культур. Вклад российской культуры в формирование ценностей
+            современного общества</a>
+          <a href="">1.11 > Мораль как общечеловеческая ценность и социальный регулятор.
+            Категории морали. Нравственность. Этика и этические нормы.
+            Гражданственность. Патриотизм</a>
+          <a href="">1.12 > Наука. Естественные, технические, точные и социально-гуманитарные
+            науки. Особенности, уровни и методы научного познания.
+            Особенности научного познания в социальногуманитарных науках.
+            Функции науки. Возрастание роли науки в современном обществе.
+            Направления научно-технологического развития и научные
+            достижения Российской Федерации</a>
+          <a href="">1.13 > Образование в современном обществе. Российская система
+            образования. Основные направления развития образования в
+            Российской Федерации. Непрерывность образования в информационном
+            обществе. Значение самообразования</a>
+          <a href="">1.14 > Религия, её роль в жизни общества и человека. Мировые и
+            национальные религии. Значение поддержания межконфессионального
+            мира в Российской Федерации. Свобода совести</a>
+          <a href="">1.15 > Искусство, его основные функции. Особенности искусства как
+            формы духовной культуры. Достижения современного российского искусства</a>
         </div>
       </div>
-
-      <footer class="site-footer">
-        <span class="about">Электронные материалы к ЕГЭ</span>
-        <div class="contact">
-          <a href="https://t.me/sneroff">S.Nekrasov</a> // <a>V.Burmatova</a>
-        </div>
-      </footer>
     </div>
-    <script>
-      const returnBack = document.querySelector('.return-back');
-      returnBack.addEventListener('click', () => {
-        window.location.href = '../index.html';
-      });
-    </script>
-  </body>
+
+    <footer class="site-footer">
+      <span class="about">Электронные материалы к ЕГЭ</span>
+      <div class="contact">
+        <a href="https://t.me/sneroff">S.Nekrasov</a> // <a>V.Burmatova</a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const returnBack = document.querySelector('.return-back');
+    returnBack.addEventListener('click', () => {
+      window.location.href = '../index.html';
+    });
+  </script>
+</body>
+
 </html>

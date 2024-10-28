@@ -1,120 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sneroff. >>> education >>> sociology</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../../styles.css" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="icon" type="image/svg" href="../favicon.svg" />
-    <script>
-      function applyTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sneroff. >>> education >>> sociology</title>
+  <meta name="title" content="sneroff. >>> education >>> sociology" />
+  <meta name="description" content="I'm too busy right now, I need a cup of tea. ☕" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sneroff.me/" />
+  <meta property="og:title" content="sneroff. >>> education >>> sociology" />
+  <meta property="og:description" content="I'm too busy right now, I need a cup of tea. ☕" />
+  <meta property="og:image" content="https://sneroff.me/image.png" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://sneroff.me/" />
+  <meta property="twitter:title" content="sneroff. >>> education >>> sociology" />
+  <meta property="twitter:description" content="I'm too busy right now, I need a cup of tea. ☕" />
+  <meta property="twitter:image" content="https://sneroff.me/image.png" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/svg" href="../favicon.svg" />
+  <script>
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
+
+    function detectSystemTheme() {
+      const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+      if (darkThemeMq.matches) {
+        applyTheme('dark');
+      } else {
+        applyTheme('light');
       }
+    }
 
-      function detectSystemTheme() {
-        const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
-        if (darkThemeMq.matches) {
-          applyTheme('dark');
-        } else {
-          applyTheme('light');
-        }
-      }
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+      const newColorScheme = e.matches ? 'dark' : 'light';
+      applyTheme(newColorScheme);
+    });
 
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        const newColorScheme = e.matches ? 'dark' : 'light';
-        applyTheme(newColorScheme);
-      });
+    window.addEventListener('DOMContentLoaded', detectSystemTheme);
+  </script>
+</head>
 
-      window.addEventListener('DOMContentLoaded', detectSystemTheme);
-    </script>
-  </head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="return-back">&larr;</div>
+      <span class="company-name">sneroff.</span>
+    </header>
 
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="return-back">&larr;</div>
-        <span class="company-name">sneroff.</span>
-      </header>
-
-      <div class="content">
-        <div class="right-pos block">
-          <div class="subject-title">Социология</div>
-          <div class="list-themes">
-            <a href=""
-              >3.1 > Социальные общности, группы, их типы. Социальная
-              стратификация, её критерии. Социальное неравенство. Социальная
-              структура российского общества</a
-            >
-            <a href=""
-              >3.2 > Этнические общности. Этнокультурные ценности и традиции.
-              Нация как этническая и гражданская общность. Этнические отношения.
-              Этническое многообразие современного мира. Миграционные процессы в
-              современном мире. Этносоциальные конфликты, способы их
-              предотвращения и пути разрешения. Конституционные принципы
-              (основы) национальной политики в Российской Федерации</a
-            >
-            <a href=""
-              >3.3 > Молодёжь как социальная группа, её социальные и
-              социально-психологические характеристики. Молодёжная субкультура.
-              Проблемы молодёжи в современной России</a
-            >
-            <a href=""
-              >3.4 > Положение индивида в обществе. Социальные статусы и роли.
-              Социальная мобильность, её формы и каналы в современном российском
-              обществе</a
-            >
-            <a href=""
-              >3.5 > Семья и брак. Функции и типы семьи. Семья как важнейший
-              социальный институт</a
-            >
-            <a href=""
-              >3.6 > Социализация личности и её этапы. Агенты (институты)
-              социализации
-            </a>
-            <a href=""
-              >3.7 > Социальные нормы и отклоняющееся (девиантное) поведение.
-              Формы социальных девиаций. Конформизм. Социальный контроль и
-              самоконтроль</a
-            >
-            <a href=""
-              >3.8 > Социальный конфликт. Виды социальных конфликтов, их
-              причины. Способы разрешения социальных конфликтов</a
-            >
-            <a href=""
-              >3.9 > Государственная поддержка социально незащищённых слоёв
-              общества в Российской Федерации. Государственная молодёжная
-              политика Российской Федерации. Меры социальной поддержки семьи в
-              Российской Федерации. Помощь государства многодетным семьям</a
-            >
-            <a href=""
-              >3.10 > Особенности профессиональной деятельности в сфере науки,
-              образования, искусства. Особенности профессиональной деятельности
-              в экономической и финансовых сферах. Особенности профессиональной
-              деятельности социолога, социального психолога. Особенности
-              профессиональной деятельности политолога. Юридическое образование,
-              юристы как социально-профессиональная группа</a
-            >
-          </div>
+    <div class="content">
+      <div class="right-pos block">
+        <div class="subject-title">Социология</div>
+        <div class="list-themes">
+          <a href="">3.1 > Социальные общности, группы, их типы. Социальная
+            стратификация, её критерии. Социальное неравенство. Социальная
+            структура российского общества</a>
+          <a href="">3.2 > Этнические общности. Этнокультурные ценности и традиции.
+            Нация как этническая и гражданская общность. Этнические отношения.
+            Этническое многообразие современного мира. Миграционные процессы в
+            современном мире. Этносоциальные конфликты, способы их
+            предотвращения и пути разрешения. Конституционные принципы
+            (основы) национальной политики в Российской Федерации</a>
+          <a href="">3.3 > Молодёжь как социальная группа, её социальные и
+            социально-психологические характеристики. Молодёжная субкультура.
+            Проблемы молодёжи в современной России</a>
+          <a href="">3.4 > Положение индивида в обществе. Социальные статусы и роли.
+            Социальная мобильность, её формы и каналы в современном российском
+            обществе</a>
+          <a href="">3.5 > Семья и брак. Функции и типы семьи. Семья как важнейший
+            социальный институт</a>
+          <a href="">3.6 > Социализация личности и её этапы. Агенты (институты)
+            социализации
+          </a>
+          <a href="">3.7 > Социальные нормы и отклоняющееся (девиантное) поведение.
+            Формы социальных девиаций. Конформизм. Социальный контроль и
+            самоконтроль</a>
+          <a href="">3.8 > Социальный конфликт. Виды социальных конфликтов, их
+            причины. Способы разрешения социальных конфликтов</a>
+          <a href="">3.9 > Государственная поддержка социально незащищённых слоёв
+            общества в Российской Федерации. Государственная молодёжная
+            политика Российской Федерации. Меры социальной поддержки семьи в
+            Российской Федерации. Помощь государства многодетным семьям</a>
+          <a href="">3.10 > Особенности профессиональной деятельности в сфере науки,
+            образования, искусства. Особенности профессиональной деятельности
+            в экономической и финансовых сферах. Особенности профессиональной
+            деятельности социолога, социального психолога. Особенности
+            профессиональной деятельности политолога. Юридическое образование,
+            юристы как социально-профессиональная группа</a>
         </div>
       </div>
-
-      <footer class="site-footer">
-        <span class="about">Электронные материалы к ЕГЭ</span>
-        <div class="contact">
-          <a href="https://t.me/sneroff">S.Nekrasov</a> // <a>V.Burmatova</a>
-        </div>
-      </footer>
     </div>
-    <script>
-      const returnBack = document.querySelector(".return-back");
-      returnBack.addEventListener("click", () => {
-        window.location.href = "../index.html";
-      });
-    </script>
-  </body>
+
+    <footer class="site-footer">
+      <span class="about">Электронные материалы к ЕГЭ</span>
+      <div class="contact">
+        <a href="https://t.me/sneroff">S.Nekrasov</a> // <a>V.Burmatova</a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const returnBack = document.querySelector(".return-back");
+    returnBack.addEventListener("click", () => {
+      window.location.href = "../index.html";
+    });
+  </script>
+</body>
+
 </html>
