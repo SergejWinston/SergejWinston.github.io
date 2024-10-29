@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>sneroff. >> freezed project</title>
+    <meta name="title" content="sneroff. >> freezed project" />
+    <meta
+      name="description"
+      content="Well, it's all frozen. Where's my tea?! ❄☕"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sneroff.me/" />
+    <meta property="og:title" content="sneroff. >> freezed project" />
+    <meta
+      property="og:description"
+      content="Well, it's all frozen. Where's my tea?! ❄☕"
+    />
+    <meta property="og:image" content="https://sneroff.me/image.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://sneroff.me/" />
+    <meta property="twitter:title" content="sneroff. >> freezed project" />
+    <meta
+      property="twitter:description"
+      content="Well, it's all frozen. Where's my tea?! ❄☕"
+    />
+    <meta property="twitter:image" content="https://sneroff.me/image.png" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="icon" type="image/svg" href="favicon.svg" />
+    <script>
+      function applyTheme(theme) {
+        document.documentElement.setAttribute("data-theme", theme);
+      }
+
+      function detectSystemTheme() {
+        const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+        if (darkThemeMq.matches) {
+          applyTheme("dark");
+        } else {
+          applyTheme("light");
+        }
+      }
+
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (e) => {
+          const newColorScheme = e.matches ? "dark" : "light";
+          applyTheme(newColorScheme);
+        });
+
+      window.addEventListener("DOMContentLoaded", detectSystemTheme);
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <span class="company-name">sneroff.</span>
+        <div class="return-back">←</div>
+      </header>
+
+      <div class="content">
+        <div class="block">
+          <div class="block-title-freezed">
+            Sorry, this project freezed...&nbsp;❄
+          </div>
+          <div class="snowflakes" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <div class="contact"><a href="https://t.me/sneroff">S.Nekrasov</a></div>
+      </footer>
+    </div>
+
+    <style>
+      .content {
+        @media (max-width: 1000px) {
+          flex-direction: row;
+        }
+      }
+    </style>
+
+    <style>
+      .snowflake {
+        position: absolute;
+        top: -10px;
+        font-size: 1.5rem; /* Adjust size as needed */
+        opacity: 0.8;
+        pointer-events: none;
+        animation: fall linear infinite;
+      }
+
+      @keyframes fall {
+        to {
+          transform: translateY(100vh);
+        }
+      }
+    </style>
+
+    <script>
+      const returnBack = document.querySelector(".return-back");
+      returnBack.addEventListener("click", () => {
+        window.location.href = "../../index.html";
+      });
+
+      function createSnowflake() {
+        const snowflake = document.createElement("div");
+        snowflake.classList.add("snowflake");
+        const block = document.querySelector(".block-title-freezed");
+        const blockRect = block.getBoundingClientRect();
+        snowflake.style.left = `${
+          blockRect.left + 20 + Math.random() * (blockRect.width - 40)
+        }px`;
+        snowflake.style.fontSize = `${Math.random() * 10 + 10}px`;
+        snowflake.style.animationDuration = `${Math.random() * 6 + 2}s`;
+        snowflake.textContent = "❄";
+        block.appendChild(snowflake);
+
+        setTimeout(() => {
+          snowflake.remove();
+        }, 2000);
+      }
+
+      setInterval(createSnowflake, 400);
+    </script>
+  </body>
+</html>
